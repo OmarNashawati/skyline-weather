@@ -10,7 +10,5 @@ export const getWeather = async (q = 'tokyo', days = 7) => {
       alerts: 'no',
     },
   })
-  console.log(response.data)
-
   return normalizeData(response.data)
 }
